@@ -114,7 +114,6 @@ export function SlotsClient({ initialSlots, selectedDate }: { initialSlots: any[
                   mode="single"
                   selected={parseISO(selectedDate)}
                   onSelect={handleDateChange}
-                  initialFocus
                   className="bg-transparent text-white p-3"
                   modifiersClassNames={{
                     today: "bg-slate-800 text-white rounded-md",
