@@ -27,7 +27,7 @@ export async function getManagerDirectory() {
 
   if (error) {
     console.error("Error fetching staff directory:", error);
-    return [];
+    return { managers: [], centres: [] };
   }
 
   // Also fetch all active procurement centres for the "Add Staff" form dropdown
@@ -132,8 +132,9 @@ export async function getManagerDashboardData() {
     .eq("id", user.id)
     .single();
 
+  const centreId = profile?.staff_assignments?.[0]?.centre_id;
   const centre = profile?.staff_assignments?.[0]?.procurement_centres;
-  if (!centre) return { centre: null, bookings: [] };
+  if (!centreId || !centre) return { centre: null, bookings: [] };
 
   const today = new Date().toISOString().split('T')[0];
   const { data: bookings, error } = await supabaseAdmin
@@ -144,7 +145,7 @@ export async function getManagerDashboardData() {
       commodities(id, name),
       slots!inner(start_time, end_time, date)
     `)
-    .eq("centre_id", centre.id)
+    .eq("centre_id", centreId)
     .eq("slots.date", today)
     .order("slots(start_time)", { ascending: true });
 
@@ -178,6 +179,9 @@ export async function verifyGatePass(token: string) {
     return { error: "Invalid Gate Pass Token" };
   }
 
+  const profilesData: any = booking.profiles;
+  const farmerName = Array.isArray(profilesData) ? profilesData[0]?.full_name : profilesData?.full_name;
+
   // Check if it's already arrived
   if (booking.status === "YARD_ARRIVED" || booking.status === "QUALITY_CHECK" || booking.status === "WEIGHMENT") {
     return { error: "Farmer has already arrived at the yard." };
@@ -197,7 +201,7 @@ export async function verifyGatePass(token: string) {
   if (updateError) return { error: updateError.message };
   
   revalidatePath("/manager");
-  return { success: true, farmerName: booking.profiles.full_name, vehicle: booking.vehicle_number || "Unknown" };
+  return { success: true, farmerName: farmerName || "Unknown Farmer", vehicle: booking.vehicle_number || "Unknown" };
 }
 
 export async function callNextFarmer(bookingId: string) {

@@ -10,10 +10,6 @@ const withPWA = withPWAInit({
 const nextConfig: NextConfig = {
   turbopack: {},
   allowedDevOrigins: ["10.0.2.2", "localhost"],
-  devIndicators: {
-    appIsrStatus: false,
-    buildActivity: false,
-  }
 };
 
 export default withPWA(nextConfig);

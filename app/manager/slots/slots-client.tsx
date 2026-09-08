@@ -116,8 +116,8 @@ export function SlotsClient({ initialSlots, selectedDate }: { initialSlots: any[
                   onSelect={handleDateChange}
                   initialFocus
                   className="bg-transparent text-white p-3"
-                  classNames={{
-                    day_today: "bg-slate-800 text-white rounded-md",
+                  modifiersClassNames={{
+                    today: "bg-slate-800 text-white rounded-md",
                   }}
                 />
               </div>

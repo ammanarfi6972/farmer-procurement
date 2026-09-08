@@ -11,13 +11,14 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { format } from "date-fns";
 import { cn, formatDateTime } from "@/lib/utils";
+import { DateRange } from "react-day-picker";
 
 const COLORS = ['#818cf8', '#34d399', '#fbbf24', '#f87171', '#a78bfa'];
 
 export function AdminDashboardClient({ initialData, initialParams }: { initialData: any, initialParams: any }) {
   const router = useRouter();
   const [period, setPeriod] = useState(initialParams?.period || "today");
-  const [dateRange, setDateRange] = useState<{ from?: Date; to?: Date }>({
+  const [dateRange, setDateRange] = useState<DateRange | undefined>({
     from: initialParams?.from ? new Date(initialParams.from) : undefined,
     to: initialParams?.to ? new Date(initialParams.to) : undefined,
   });
