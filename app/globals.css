@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Vibrant Nature Light Theme (Farmers) */
+    --background: 140 30% 98%;
+    --foreground: 140 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 140 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 10% 15%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 140 20% 90%;
+    --secondary-foreground: 140 40% 20%;
+    --muted: 140 15% 94%;
+    --muted-foreground: 140 10% 45%;
+    --accent: 140 20% 90%;
+    --accent-foreground: 140 40% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 140 15% 88%;
+    --input: 140 15% 88%;
+    --ring: 142.1 76.2% 36.3%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Midnight Slate Dark Theme (Staff/Admin) */
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html, body {
+    width: 100%;
+    min-height: 100%;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+}
+
+::-webkit-scrollbar { display: none; }
+
+/* Custom UI Utilities */
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  .dark .glass, .dark.glass {
+    @apply bg-slate-900/60 backdrop-blur-md border border-slate-800/50 shadow-sm;
+  }
+  
+  .bg-mesh {
+    background-color: #f1fef4;
+    background-image: 
+      radial-gradient(at 40% 20%, hsla(140, 100%, 85%, 0.4) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(189, 100%, 85%, 0.4) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(140, 100%, 85%, 0.4) 0px, transparent 50%);
+  }
+  
+  .dark .bg-mesh, .dark.bg-mesh {
+    background-color: #020617;
+    background-image: 
+      radial-gradient(at 40% 20%, hsla(220, 100%, 20%, 0.2) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(280, 100%, 20%, 0.2) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(200, 100%, 20%, 0.2) 0px, transparent 50%);
+  }
+}
+
+/* Hide Next.js Dev Indicator */
+nextjs-portal, #next-build-indicator {
+  display: none !important;
+}

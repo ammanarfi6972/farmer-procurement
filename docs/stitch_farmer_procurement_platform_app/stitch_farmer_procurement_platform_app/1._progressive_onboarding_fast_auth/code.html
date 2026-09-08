@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#334f00","surface-container-lowest":"#ffffff","surface-bright":"#f9f9ff","surface-tint":"#316858","surface-dim":"#d3daef","secondary-container":"#a0f399","background":"#f9f9ff","error-container":"#ffdad6","primary-container":"#134e3f","on-primary":"#ffffff","surface-container-high":"#e1e8fd","on-primary-container":"#86beab","inverse-primary":"#99d2be","secondary-fixed":"#a3f69c","inverse-on-surface":"#edf0ff","secondary":"#1b6d24","on-tertiary-fixed":"#121f00","surface-container":"#e9edff","outline-variant":"#bfc9c3","on-secondary-container":"#217128","on-surface":"#141b2b","on-error-container":"#93000a","on-primary-fixed-variant":"#155041","primary-fixed":"#b5efda","tertiary":"#203500","primary":"#00362a","on-tertiary":"#ffffff","on-background":"#141b2b","surface-container-low":"#f1f3ff","on-secondary":"#ffffff","tertiary-fixed-dim":"#98da27","on-secondary-fixed":"#002204","surface-container-highest":"#dce2f7","secondary-fixed-dim":"#88d982","inverse-surface":"#293040","on-tertiary-container":"#85c505","on-secondary-fixed-variant":"#005312","surface":"#f9f9ff","primary-fixed-dim":"#99d2be","tertiary-fixed":"#b2f746","on-primary-fixed":"#002018","on-error":"#ffffff","error":"#ba1a1a","outline":"#707975","surface-variant":"#dce2f7","on-surface-variant":"#404945","tertiary-container":"#314d00"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"spacing-sm":"0.75rem","touch-target-min":"3rem","spacing-xs":"0.5rem","spacing-xl":"2rem","spacing-4xs":"0.125rem","spacing-2xs":"0.375rem","screen-padding-mobile":"1rem","spacing-3xs":"0.25rem","spacing-3xl":"3rem","spacing-lg":"1.5rem","spacing-2xl":"2.5rem","screen-padding-tablet":"1.5rem","spacing-md":"1rem","screen-padding-desktop":"2rem"},"fontFamily":{"title-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"display-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-md":["Inter"],"title-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Inter"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0.015em","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.005em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed pt-safe pb-safe"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full px-screen-padding-mobile pb-spacing-2xl space-y-spacing-md">
+<!-- Audio Prompt / Yard Welcome Ribbon -->
+<section class="w-full bg-surface-container-high text-on-surface rounded-xl p-spacing-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center space-x-spacing-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Audio Guidance</span>
+<span class="font-title-sm text-title-sm truncate font-semibold text-on-surface">बोल के सुनिए / Listen to Guide</span>
+</div>
+</div>
+<button class="h-touch-target-min px-spacing-sm bg-surface-container-lowest text-primary rounded-lg flex items-center space-x-spacing-4xs font-label-md text-label-md active:scale-95 transition-transform shrink-0 shadow-sm" id="audio-guide-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Play</span>
+</button>
+</section>
+<!-- Vernacular Language Horizontal Chips -->
+<section class="w-full flex flex-col space-y-spacing-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">अपनी भाषा चुनें / Select Language</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">5 Available</span>
+</div>
+<div class="flex space-x-spacing-xs overflow-x-auto pb-spacing-3xs scrollbar-none -mx-screen-padding-mobile px-screen-padding-mobile">
+<button class="lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-primary text-on-primary flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span>English</span>
+</button>
+<button class="lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-surface-container-high text-on-surface flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">volume_up</span>
+<span>हिंदी (Hindi)</span>
+</button>
+<button class="lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-surface-container-high text-on-surface flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">volume_up</span>
+<span>मराठी (Marathi)</span>
+</button>
+<button class="lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-surface-container-high text-on-surface flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">volume_up</span>
+<span>ਪੰਜਾਬੀ (Punjabi)</span>
+</button>
+<button class="lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-surface-container-high text-on-surface flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">volume_up</span>
+<span>తెలుగు (Telugu)</span>
+</button>
+</div>
+</section>
+<!-- Primary Authentication Unit -->
+<section class="w-full bg-surface-container-lowest text-on-surface rounded-xl p-spacing-md shadow-md flex flex-col space-y-spacing-md">
+<!-- Header with Verification Status -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col space-y-spacing-4xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Farmer Gateway</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fast Procurement &amp; Direct Settlement</span>
+</div>
+<div class="h-7 px-spacing-xs bg-secondary-container text-on-secondary-container rounded-full flex items-center space-x-spacing-4xs font-label-sm text-label-sm font-semibold shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Verified Yard</span>
+</div>
+</div>
+<!-- Toggle Identifier Type -->
+<div class="grid grid-cols-2 p-spacing-4xs bg-surface-container-low rounded-lg gap-spacing-4xs">
+<button class="h-10 rounded-md bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold flex items-center justify-center space-x-spacing-4xs shadow-sm" id="tab-phone" type="button">
+<span class="material-symbols-outlined text-[18px]">smartphone</span>
+<span>Mobile No.</span>
+</button>
+<button class="h-10 rounded-md text-on-surface-variant font-label-md text-label-md flex items-center justify-center space-x-spacing-4xs" id="tab-kcc" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>KCC / Aadhaar</span>
+</button>
+</div>
+<!-- Input Group -->
+<div class="flex flex-col space-y-spacing-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium" for="farmer-identity">Mobile Number (किसान मोबाइल नंबर)</label>
+<div class="w-full h-14 bg-surface-container-low rounded-xl flex items-center px-spacing-sm space-x-spacing-xs focus-within:bg-surface-container-lowest focus-within:shadow-sm">
+<div class="flex items-center space-x-spacing-4xs text-on-surface font-title-md text-title-md shrink-0">
+<span class="font-semibold text-primary">+91</span>
+<span class="text-outline-variant font-light">|</span>
+</div>
+<input class="w-full bg-transparent text-on-surface font-title-md text-title-md placeholder:text-outline focus:outline-none tracking-wider" id="farmer-identity" inputmode="numeric" maxlength="10" placeholder="98765 43210" type="tel"/>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hidden" id="clear-input" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-spacing-4xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Linked to your Mandi Weighment Slip</span>
+<button class="font-label-sm text-label-sm text-primary underline" type="button">Look up ID</button>
+</div>
+</div>
+<!-- Express Dispatch Action -->
+<div class="flex flex-col space-y-spacing-xs pt-spacing-2xs">
+<button class="w-full h-13 min-h-touch-target-min bg-primary text-on-primary rounded-xl font-title-sm text-title-sm flex items-center justify-center space-x-spacing-xs shadow-md active:scale-[0.99] transition-transform" id="otp-btn" type="button">
+<span>Send 4-Digit OTP (ओटीपी भेजें)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center space-x-spacing-2xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span class="font-label-sm text-label-sm">Secured via National Agricultural Code Base (e-Pramaan)</span>
+</div>
+</div>
+</section>
+<!-- Contextual Visual Proof Card -->
+<section class="w-full bg-surface-container-low rounded-xl p-spacing-sm flex items-center space-x-spacing-sm">
+<div class="w-16 h-16 rounded-lg bg-surface-container-high overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of Indian farmer hands proudly holding golden harvested wheat grain against an agricultural depot background, warm direct sunlight, institutional fintech tone with high clarity and contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWe93XSFQDzPhldiuK7bzsESRrd1bV1AQ5GOF5lqaH5uxNOPQvD18tGasRwCzzDoyNfyPeL6oG0qA5PX2qx0mK_9BlmZbvaNcIS5d0UrEP-KuLDkVcJXD5LMI7pc1kdf8ub1tG4kgKodptau582t4EA0EsVR-r1V-YS9psD8IM-uweRSh7TkmSGE_QHoe394gVkwcOlBoAqqPElUsR8jw6m2fjfm8JF1ZgIBXeIINIhrkLyDs_oXW0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Direct MSP Payout Track</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Direct DBT transfer into certified bank accounts within 48 hours of lot unload.</span>
+</div>
+</section>
+<!-- Institutional Mandate Badges & Trust Seals -->
+<section class="w-full grid grid-cols-2 gap-spacing-xs">
+<!-- e-NAM APMC Mark -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-sm flex items-start space-x-spacing-xs shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-primary truncate">e-NAM &amp; APMC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Integrated Mandi Network</span>
+</div>
+</div>
+<!-- MSP Assured Seal -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-sm flex items-start space-x-spacing-xs shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-secondary truncate">Govt. MSP Mark</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assurance Protocol 2024</span>
+</div>
+</div>
+</section>
+<!-- Helpline Emergency Support Tray -->
+<section class="w-full bg-surface-container-highest text-on-surface rounded-xl p-spacing-sm flex items-center justify-between">
+<div class="flex items-center space-x-spacing-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Need Immediate Help?</span>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface truncate">Toll-Free: 1800-180-1551</span>
+</div>
+</div>
+<a class="h-touch-target-min px-spacing-sm bg-primary text-on-primary rounded-lg flex items-center space-x-spacing-4xs font-label-md text-label-md active:scale-95 transition-transform shrink-0 shadow-sm" href="tel:18001801551">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Now</span>
+</a>
+</section>
+</div>
+<script>
+  // Simple micro-interactions for input handling and tabs
+  const input = document.getElementById('farmer-identity');
+  const clearBtn = document.getElementById('clear-input');
+  const tabPhone = document.getElementById('tab-phone');
+  const tabKcc = document.getElementById('tab-kcc');
+  const langPills = document.querySelectorAll('.lang-pill');
+  const audioBtn = document.getElementById('audio-guide-btn');
+
+  if (input && clearBtn) {
+    input.addEventListener('input', (e) => {
+      clearBtn.classList.toggle('hidden', e.target.value.length === 0);
+    });
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      clearBtn.classList.add('hidden');
+      input.focus();
+    });
+  }
+
+  if (tabPhone && tabKcc) {
+    tabPhone.addEventListener('click', () => {
+      tabPhone.className = 'h-10 rounded-md bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold flex items-center justify-center space-x-spacing-4xs shadow-sm';
+      tabKcc.className = 'h-10 rounded-md text-on-surface-variant font-label-md text-label-md flex items-center justify-center space-x-spacing-4xs';
+      if (input) {
+        input.placeholder = '98765 43210';
+        input.type = 'tel';
+      }
+    });
+
+    tabKcc.addEventListener('click', () => {
+      tabKcc.className = 'h-10 rounded-md bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold flex items-center justify-center space-x-spacing-4xs shadow-sm';
+      tabPhone.className = 'h-10 rounded-md text-on-surface-variant font-label-md text-label-md flex items-center justify-center space-x-spacing-4xs';
+      if (input) {
+        input.placeholder = 'KCC / Aadhaar Number';
+        input.type = 'text';
+      }
+    });
+  }
+
+  langPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      langPills.forEach(p => {
+        p.className = 'lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-surface-container-high text-on-surface flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all';
+        const icon = p.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[16px] text-outline';
+      });
+      pill.className = 'lang-pill h-11 shrink-0 px-spacing-sm rounded-full bg-primary text-on-primary flex items-center space-x-spacing-3xs font-label-md text-label-md active:scale-95 transition-all';
+      const activeIcon = pill.querySelector('.material-symbols-outlined');
+      if (activeIcon) activeIcon.className = 'material-symbols-outlined text-[16px] text-on-primary';
+    });
+  });
+
+  if (audioBtn) {
+    let isPlaying = false;
+    audioBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      audioBtn.innerHTML = isPlaying 
+        ? '<span class="material-symbols-outlined text-[18px] animate-pulse">pause</span><span>Stop</span>' 
+        : '<span class="material-symbols-outlined text-[18px]">play_arrow</span><span>Play</span>';
+    });
+  }
+</script></main></body></html>

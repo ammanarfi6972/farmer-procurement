@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#334f00","surface-container-lowest":"#ffffff","surface-bright":"#f9f9ff","surface-tint":"#316858","surface-dim":"#d3daef","secondary-container":"#a0f399","background":"#f9f9ff","error-container":"#ffdad6","primary-container":"#134e3f","on-primary":"#ffffff","surface-container-high":"#e1e8fd","on-primary-container":"#86beab","inverse-primary":"#99d2be","secondary-fixed":"#a3f69c","inverse-on-surface":"#edf0ff","secondary":"#1b6d24","on-tertiary-fixed":"#121f00","surface-container":"#e9edff","outline-variant":"#bfc9c3","on-secondary-container":"#217128","on-surface":"#141b2b","on-error-container":"#93000a","on-primary-fixed-variant":"#155041","primary-fixed":"#b5efda","tertiary":"#203500","primary":"#00362a","on-tertiary":"#ffffff","on-background":"#141b2b","surface-container-low":"#f1f3ff","on-secondary":"#ffffff","tertiary-fixed-dim":"#98da27","on-secondary-fixed":"#002204","surface-container-highest":"#dce2f7","secondary-fixed-dim":"#88d982","inverse-surface":"#293040","on-tertiary-container":"#85c505","on-secondary-fixed-variant":"#005312","surface":"#f9f9ff","primary-fixed-dim":"#99d2be","tertiary-fixed":"#b2f746","on-primary-fixed":"#002018","on-error":"#ffffff","error":"#ba1a1a","outline":"#707975","surface-variant":"#dce2f7","on-surface-variant":"#404945","tertiary-container":"#314d00"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"spacing-sm":"0.75rem","touch-target-min":"3rem","spacing-xs":"0.5rem","spacing-xl":"2rem","spacing-4xs":"0.125rem","spacing-2xs":"0.375rem","screen-padding-mobile":"1rem","spacing-3xs":"0.25rem","spacing-3xl":"3rem","spacing-lg":"1.5rem","spacing-2xl":"2.5rem","screen-padding-tablet":"1.5rem","spacing-md":"1rem","screen-padding-desktop":"2rem"},"fontFamily":{"title-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"display-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-md":["Inter"],"title-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Inter"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0.015em","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.005em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-screen-padding-mobile flex items-center justify-between gap-spacing-xs"><div class="flex items-center gap-spacing-xs"><img alt="KrishiSetu Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2KdJVj0-aOIWlQX4NYlqajXOrI2hloj73uVi0wkuiZk9pd1dnKF_cMm_bqRdshjNxU7eZZ8D8Ff0hN3XN85PS0GH-2fqJp7OVMh7V0hu7Ewdn0PwhJmDOzm_j-twqWJatLmJOWz6dD8nsAdDIZnPzckqyj9O8098zNCLYj8sHCLt6sOGMNBj9pYvKDCP4jEeVdZQf7f3l_EiSHjlVJGfSuX_ADdibkUtR5otx5U7QiqDDLH_BEKBS"/><div class="flex flex-col"><span class="font-title-md text-title-md tracking-tight text-primary leading-tight">KrishiSetu</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none hidden">Bookings</span></div></div><div class="flex items-center gap-spacing-2xs"><button aria-label="Voice Guidance Assistant" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="flex items-center bg-surface-container-high rounded-full p-spacing-4xs"><button class="px-spacing-xs py-spacing-3xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-[0_1px_3px_0px_rgba(19,78,63,0.08)]" type="button">EN</button><button class="px-spacing-xs py-spacing-3xs rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">हि</button><button class="px-spacing-xs py-spacing-3xs rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">म</button></div><div class="relative flex items-center justify-center w-11 h-11"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_0px_rgba(19,78,63,0.1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_0Elz_ILz_kj-7IMuycD95FI8WnT7nPSuxAzuL6cVenvU95rw2nDI0O_0X7MXbrlKjQS78tr12mKVGe7bleW5rCKAIEJFx6Yocqgar_G3wBO6-3baYwza7BaMiEoTVIw31YGjIaxT5u0tH3OUJy-ZfENoE5LREzjc-JtskUj9Vip_LelpP00p42HMQWEOd7Mtp7Y2o4ihysPu_xGMEZMszdM6H98PCM6fSKRAslsFCPkUYuKFgIqS"/><div class="absolute bottom-1 right-1 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface flex items-center justify-center"><span class="material-symbols-outlined text-[9px] text-on-secondary">check</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Sunlight High-Contrast Quick Access Utility Bar -->
+<div class="w-full px-screen-padding-mobile py-spacing-xs bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-spacing-xs">
+<button aria-label="Close gate pass" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-spacing-2xs bg-secondary-container text-on-secondary-container px-spacing-xs py-spacing-3xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm">Offline Verified</span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-xs">
+<button aria-label="Listen to Token &amp; Gate in Hindi" class="h-10 px-spacing-xs rounded-full bg-surface-container-lowest text-primary flex items-center gap-spacing-3xs shadow-sm active:scale-95 transition-transform" id="voice-pass-readout" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">volume_up</span>
+<span class="font-label-sm text-label-sm">बोलकर सुनें</span>
+</button>
+<button aria-label="Maximize brightness for barrier scanning" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface-variant flex items-center justify-center shadow-sm" id="brightness-toggle" type="button">
+<span class="material-symbols-outlined text-[20px]">brightness_high</span>
+</button>
+</div>
+</div>
+<div class="px-screen-padding-mobile flex flex-col gap-spacing-md mt-spacing-xs">
+<!-- Mandi Authority Header & Countdown Banner -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-spacing-sm shadow-sm gap-spacing-2xs">
+<div class="flex items-start justify-between gap-spacing-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">e-NAM Integrated Mandi Pass</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Official APMC Mandi Digital Gate Pass</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Haryana State Agricultural Marketing Board (HSAMB)</p>
+</div>
+<div class="shrink-0 w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[26px]">local_shipping</span>
+</div>
+</div>
+<!-- Live Expiry Timer Pill -->
+<div class="mt-spacing-3xs flex items-center justify-between bg-surface-container-high rounded-lg px-spacing-sm py-spacing-xs">
+<div class="flex items-center gap-spacing-3xs text-on-surface">
+<span class="material-symbols-outlined text-error text-[18px]">timer</span>
+<span class="font-label-md text-label-md">Valid until 01:30 PM Today</span>
+</div>
+<div class="bg-primary text-on-primary px-spacing-xs py-spacing-4xs rounded-md font-label-md text-label-md tracking-wider font-semibold" id="countdown-clock">
+          01h : 54m : 22s
+        </div>
+</div>
+</div>
+<!-- Hero Gate Pass Card: Scannable Security Core -->
+<div class="relative bg-surface-container-lowest rounded-xl p-spacing-md shadow-md flex flex-col items-center overflow-hidden">
+<!-- Decorative Security Pattern Edge (CSS Geometric Bars) -->
+<div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-primary via-tertiary-fixed-dim to-primary"></div>
+<!-- Top Badging within Card -->
+<div class="w-full flex items-center justify-between pb-spacing-xs">
+<span class="font-label-sm text-label-sm px-spacing-xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant">ENTRY PASS #9941</span>
+<div class="flex items-center gap-spacing-4xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>Security Sealed</span>
+</div>
+</div>
+<!-- Large Center QR Block Designed for High Brightness Direct Sunlight Readers -->
+<div class="relative mt-spacing-2xs p- spacing-xs bg-surface-container-lowest rounded-xl flex flex-col items-center justify-center shadow-[0_2px_12px_rgba(0,0,0,0.08)]">
+<!-- SVG Generated High Density QR Core -->
+<svg aria-label="Dynamic QR Code for Gate Scanner" class="w-48 h-48 sm:w-56 sm:h-56" fill="none" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#FFFFFF" height="200" width="200"></rect>
+<!-- Top Left Finder -->
+<rect fill="#00362a" height="44" rx="4" width="44" x="14" y="14"></rect>
+<rect fill="#FFFFFF" height="28" width="28" x="22" y="22"></rect>
+<rect fill="#00362a" height="16" width="16" x="28" y="28"></rect>
+<!-- Top Right Finder -->
+<rect fill="#00362a" height="44" rx="4" width="44" x="142" y="14"></rect>
+<rect fill="#FFFFFF" height="28" width="28" x="150" y="22"></rect>
+<rect fill="#00362a" height="16" width="16" x="156" y="28"></rect>
+<!-- Bottom Left Finder -->
+<rect fill="#00362a" height="44" rx="4" width="44" x="14" y="142"></rect>
+<rect fill="#FFFFFF" height="28" width="28" x="22" y="150"></rect>
+<rect fill="#00362a" height="16" width="16" x="28" y="156"></rect>
+<!-- Data Clusters & Sync lines -->
+<rect fill="#134e3f" height="8" width="8" x="68" y="18"></rect>
+<rect fill="#134e3f" height="8" width="8" x="84" y="18"></rect>
+<rect fill="#134e3f" height="8" width="16" x="100" y="18"></rect>
+<rect fill="#134e3f" height="8" width="8" x="124" y="18"></rect>
+<rect fill="#134e3f" height="8" width="16" x="68" y="34"></rect>
+<rect fill="#134e3f" height="8" width="8" x="92" y="34"></rect>
+<rect fill="#134e3f" height="8" width="16" x="108" y="34"></rect>
+<rect fill="#134e3f" height="8" width="8" x="18" y="68"></rect>
+<rect fill="#134e3f" height="8" width="16" x="34" y="68"></rect>
+<rect fill="#134e3f" height="8" width="8" x="58" y="68"></rect>
+<rect fill="#134e3f" height="8" width="24" x="74" y="68"></rect>
+<rect fill="#134e3f" height="8" width="8" x="106" y="68"></rect>
+<rect fill="#134e3f" height="8" width="16" x="122" y="68"></rect>
+<rect fill="#134e3f" height="8" width="8" x="146" y="68"></rect>
+<rect fill="#134e3f" height="8" width="16" x="162" y="68"></rect>
+<rect fill="#134e3f" height="8" width="16" x="18" y="84"></rect>
+<rect fill="#134e3f" height="8" width="8" x="42" y="84"></rect>
+<rect fill="#134e3f" height="8" width="8" x="68" y="84"></rect>
+<rect fill="#134e3f" height="16" width="16" x="84" y="84"></rect>
+<rect fill="#134e3f" height="8" width="8" x="132" y="84"></rect>
+<rect fill="#134e3f" height="8" width="16" x="148" y="84"></rect>
+<rect fill="#134e3f" height="8" width="8" x="172" y="84"></rect>
+<rect fill="#134e3f" height="16" width="8" x="18" y="108"></rect>
+<rect fill="#134e3f" height="8" width="16" x="34" y="108"></rect>
+<rect fill="#134e3f" height="8" width="8" x="58" y="108"></rect>
+<rect fill="#134e3f" height="16" width="16" x="108" y="108"></rect>
+<rect fill="#134e3f" height="8" width="8" x="132" y="108"></rect>
+<rect fill="#134e3f" height="8" width="24" x="156" y="108"></rect>
+<rect fill="#134e3f" height="8" width="16" x="68" y="132"></rect>
+<rect fill="#134e3f" height="8" width="8" x="92" y="132"></rect>
+<rect fill="#134e3f" height="8" width="24" x="124" y="132"></rect>
+<rect fill="#134e3f" height="8" width="8" x="156" y="132"></rect>
+<rect fill="#134e3f" height="16" width="8" x="172" y="132"></rect>
+<rect fill="#134e3f" height="16" width="8" x="68" y="148"></rect>
+<rect fill="#134e3f" height="8" width="16" x="84" y="156"></rect>
+<rect fill="#134e3f" height="8" width="8" x="108" y="148"></rect>
+<rect fill="#134e3f" height="8" width="16" x="124" y="156"></rect>
+<rect fill="#134e3f" height="8" width="16" x="148" y="148"></rect>
+<rect fill="#134e3f" height="8" width="24" x="68" y="172"></rect>
+<rect fill="#134e3f" height="8" width="8" x="100" y="172"></rect>
+<rect fill="#134e3f" height="8" width="16" x="116" y="172"></rect>
+<rect fill="#134e3f" height="8" width="8" x="140" y="172"></rect>
+<rect fill="#134e3f" height="8" width="24" x="156" y="172"></rect>
+<!-- Central Mandi Hologram/Badge -->
+<circle cx="100" cy="100" fill="#00362a" r="16"></circle>
+<circle cx="100" cy="100" fill="#ffffff" r="13"></circle>
+<path d="M96 98L99 101L105 95" stroke="#00362a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<!-- Touch Feedback overlay on QR tap -->
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-spacing-3xs flex items-center gap-spacing-4xs">
+<span class="material-symbols-outlined text-[14px]">tap_and_play</span> Tap for NFC Touchless Gate Scan
+        </span>
+</div>
+<!-- Token Identification Strip -->
+<div class="w-full mt-spacing-sm pt-spacing-sm bg-surface-container-low rounded-lg p-spacing-xs flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">RFID Token Number</span>
+<span class="font-title-md text-title-md text-primary tracking-wide font-mono select-all truncate" id="token-id">RFID-APMC-9941-KNL</span>
+</div>
+<button aria-label="Copy token" class="px-spacing-xs py-spacing-2xs rounded-lg bg-surface-container-lowest text-primary flex items-center gap-spacing-4xs shadow-sm active:scale-95 transition-transform" id="copy-token-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span class="font-label-sm text-label-sm">Copy</span>
+</button>
+</div>
+<!-- Assigned Gate & Barrier Matrix -->
+<div class="w-full grid grid-cols-2 gap-spacing-xs mt-spacing-xs">
+<div class="bg-primary text-on-primary rounded-lg p-spacing-xs flex flex-col">
+<div class="flex items-center gap-spacing-4xs opacity-80">
+<span class="material-symbols-outlined text-[16px]">door_front</span>
+<span class="font-label-sm text-label-sm">Assigned Gate</span>
+</div>
+<span class="font-title-md text-title-md font-semibold mt-spacing-4xs">Gate Barrier North</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Karnal Main Depot</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container rounded-lg p-spacing-xs flex flex-col">
+<div class="flex items-center gap-spacing-4xs opacity-90">
+<span class="material-symbols-outlined text-[16px]">scale</span>
+<span class="font-label-sm text-label-sm">Weighbridge</span>
+</div>
+<span class="font-title-md text-title-md font-semibold mt-spacing-4xs">Lane #04 (Gross)</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container">Automated Sensor Line</span>
+</div>
+</div>
+<!-- Priority Slot Strip -->
+<div class="w-full mt-spacing-xs bg-surface-container rounded-lg px-spacing-sm py-spacing-xs flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Priority Arrival Window</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">11:15 AM - 11:45 AM <span class="font-normal text-on-surface-variant">(Target: 11:30 AM)</span></span>
+</div>
+</div>
+</div>
+<!-- Consignment & Logistics Verification Card -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm flex flex-col gap-spacing-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+<h2 class="font-title-md text-title-md text-on-surface">Consignment &amp; Carrier Data</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-spacing-xs py-spacing-4xs rounded-full">Pre-Assayed</span>
+</div>
+<!-- Visual Data Grid -->
+<div class="grid grid-cols-1 gap-spacing-xs">
+<!-- Farmer Detail -->
+<div class="flex items-center justify-between p-spacing-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-spacing-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Registered Farmer</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate">Ramesh Patil</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kisan ID</span>
+<span class="font-label-md text-label-md text-primary font-mono">KP-90248</span>
+</div>
+</div>
+<!-- Vehicle Detail -->
+<div class="flex items-center justify-between p-spacing-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-spacing-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">agriculture</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Carrier / Vehicle</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate">Swaraj 855 FE Trolley</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Plate Reg</span>
+<span class="font-label-md text-label-md text-on-surface font-mono">HR-05-AB-7814</span>
+</div>
+</div>
+<!-- Driver & Contact -->
+<div class="flex items-center justify-between p-spacing-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-spacing-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">airline_seat_recline_normal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Driver</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate">Self (Ramesh Patil)</span>
+</div>
+</div>
+<a class="flex items-center gap-spacing-4xs text-primary font-label-md text-label-md bg-surface-container-lowest px-spacing-xs py-spacing-2xs rounded-md shadow-sm" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>+91 98765...</span>
+</a>
+</div>
+<!-- Crop Consignment Spec -->
+<div class="flex items-center justify-between p-spacing-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-spacing-xs min-w-0">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">grain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Crop &amp; Variety</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate">Sharbati Wheat (Grade A)</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Declared Est.</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">85 Quintals</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Yard Arrival Wayfinding Strip -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Depot Approach Sequence</span>
+<span class="font-label-sm text-label-sm text-primary">Live Gate Flow</span>
+</div>
+<div class="relative w-full h-24 rounded-lg overflow-hidden flex items-center justify-center" data-alt="Overhead aerial map perspective of modern grain procurement yard with clear asphalt lane markings, yellow security barriers, clean warehouse bays and a digital weighbridge approach path in soft morning sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJwmG1JLpPrG1GXU3ivTwU25EOVSrVlOpTZCaGdVgoM6tAF6z2PMSWEIz4HOSRrsx_NrcAn0DZVLZrSlduKuty9nTJcrSt53Cg13KjqYyQkN4nCUBMPS-u7rzu-rX1nIP9sdqFtGcJarYIYg2rQ8z3IwEFg0qtoAQx8cTNP5lVmVrEjNQZ6s37UOjMZYxC43lYJouCAsyjR4-3j98WzmYw3bKrl_S4yE0CGsCqJKMBy7zCQHNSqok4')">
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[1px] flex items-center justify-around px-spacing-sm text-on-primary">
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm">1</span>
+<span class="font-label-sm text-label-sm mt-1">Barrier 04</span>
+</div>
+<div class="w-10 h-0.5 bg-primary-fixed-dim border-dashed"></div>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">2</span>
+<span class="font-label-sm text-label-sm mt-1">Gross Scale</span>
+</div>
+<div class="w-10 h-0.5 bg-primary-fixed-dim border-dashed"></div>
+<div class="flex flex-col items-center opacity-70">
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">3</span>
+<span class="font-label-sm text-label-sm mt-1">Shed #2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pre-Gate Moisture Advisory Banner -->
+<div class="rounded-xl p-spacing-sm bg-surface-container flex items-start gap-spacing-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Pre-Gate Moisture Advisory</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-spacing-4xs">
+          Moisture must be under <strong class="text-primary font-semibold">12.0%</strong> for immediate unloading. Rapid digital assay laboratory is open at Gate 2 for preliminary sampling.
+        </p>
+</div>
+</div>
+<!-- Action Buttons Block (Ergonomic 52px Touch-friendly for Android Field Use) -->
+<div class="flex flex-col gap-spacing-xs mt-spacing-2xs">
+<!-- Save / Download Offline Pass -->
+<button class="w-full h-13 min-h-[52px] bg-primary text-on-primary rounded-xl flex items-center justify-center gap-spacing-xs shadow-md active:scale-[0.98] transition-all" id="btn-download-pass" type="button">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+<span class="font-label-lg text-label-lg font-semibold tracking-wide">Save Offline / Download Pass (PDF)</span>
+</button>
+<!-- Share with Driver/Transporter via WhatsApp -->
+<button class="w-full h-12 min-h-[48px] bg-surface-container-lowest text-on-surface rounded-xl flex items-center justify-center gap-spacing-xs shadow-sm active:scale-[0.98] transition-all" id="btn-share-pass" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">share</span>
+<span class="font-label-lg text-label-lg font-medium">Share with Driver / Transporter via WhatsApp</span>
+</button>
+</div>
+<!-- Security Audit Watermark Footer -->
+<div class="flex flex-col items-center justify-center text-center py-spacing-xs">
+<div class="flex items-center gap-spacing-4xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Cryptographically Signed Mandi Manifest • HSAMB 2024</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant opacity-75">Hash: 8f4a-9941-knl-gate4-entry</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Copy Token Action Micro-Interaction
+    const copyBtn = document.getElementById('copy-token-btn');
+    const tokenId = document.getElementById('token-id');
+    if (copyBtn && tokenId) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard?.writeText(tokenId.textContent.trim());
+        const originalHtml = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">check</span><span class="font-label-sm text-label-sm text-secondary">Copied!</span>';
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHtml;
+        }, 2000);
+      });
+    }
+
+    // Audio Guidance Feedback Micro-Interaction
+    const voiceBtn = document.getElementById('voice-pass-readout');
+    if (voiceBtn) {
+      voiceBtn.addEventListener('click', () => {
+        const isSpeaking = voiceBtn.classList.contains('bg-secondary-container');
+        if (!isSpeaking) {
+          voiceBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+          voiceBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-secondary animate-bounce">volume_up</span><span class="font-label-sm text-label-sm">सुन रहे हैं...</span>';
+          setTimeout(() => {
+            voiceBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+            voiceBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-secondary">volume_up</span><span class="font-label-sm text-label-sm">बोलकर सुनें</span>';
+          }, 3500);
+        }
+      });
+    }
+
+    // Direct Sunlight Brightness Booster Simulation
+    const brightnessBtn = document.getElementById('brightness-toggle');
+    if (brightnessBtn) {
+      brightnessBtn.addEventListener('click', () => {
+        document.body.classList.toggle('brightness-110');
+        brightnessBtn.classList.toggle('text-primary');
+        brightnessBtn.classList.toggle('bg-primary-fixed');
+      });
+    }
+
+    // Real-time Expiry Countdown Tick
+    const clockEl = document.getElementById('countdown-clock');
+    if (clockEl) {
+      let secondsRemaining = (1 * 3600) + (54 * 60) + 22;
+      setInterval(() => {
+        if (secondsRemaining > 0) {
+          secondsRemaining--;
+          const hrs = String(Math.floor(secondsRemaining / 3600)).padStart(2, '0');
+          const mins = String(Math.floor((secondsRemaining % 3600) / 60)).padStart(2, '0');
+          const secs = String(secondsRemaining % 60).padStart(2, '0');
+          clockEl.textContent = `${hrs}h : ${mins}m : ${secs}s`;
+        }
+      }, 1000);
+    }
+
+    // PDF Download Simulation
+    const downloadBtn = document.getElementById('btn-download-pass');
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        const prev = downloadBtn.innerHTML;
+        downloadBtn.innerHTML = '<span class="material-symbols-outlined text-[22px] animate-spin">sync</span><span class="font-label-lg text-label-lg font-semibold">Generating Offline PDF...</span>';
+        setTimeout(() => {
+          downloadBtn.innerHTML = '<span class="material-symbols-outlined text-[22px]">check_circle</span><span class="font-label-lg text-label-lg font-semibold">Saved to Device Offline</span>';
+          setTimeout(() => { downloadBtn.innerHTML = prev; }, 2500);
+        }, 1200);
+      });
+    }
+
+    // WhatsApp Share micro-action
+    const shareBtn = document.getElementById('btn-share-pass');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        const text = encodeURIComponent("KrishiSetu Gate Pass: RFID-APMC-9941-KNL for Swaraj 855 FE at Gate North Lane 04 (Preferred slot: 11:30 AM).");
+        window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.04)]" data-active-classes="[&amp;_.nav-pill]:bg-secondary-container [&amp;_.nav-pill]:text-on-secondary-container [&amp;_.nav-label]:font-label-md [&amp;_.nav-label]:text-primary"><div class="flex justify-around items-center h-20 px-spacing-2xs"><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">dashboard</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Home</span></a><a aria-current="page" class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all [&amp;_.nav-pill]:bg-secondary-container [&amp;_.nav-pill]:text-on-secondary-container [&amp;_.nav-label]:font-label-md [&amp;_.nav-label]:text-primary" data-path="bookings" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">confirmation_number</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Bookings</span></a><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="find-centre" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">location_on</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Find Centre</span></a><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="history" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">receipt_long</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">History</span></a><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">badge</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Profile</span></a></div></nav></body></html>

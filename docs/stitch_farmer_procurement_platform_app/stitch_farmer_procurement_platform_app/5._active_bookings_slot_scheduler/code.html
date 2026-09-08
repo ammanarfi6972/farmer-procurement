@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#334f00","surface-container-lowest":"#ffffff","surface-bright":"#f9f9ff","surface-tint":"#316858","surface-dim":"#d3daef","secondary-container":"#a0f399","background":"#f9f9ff","error-container":"#ffdad6","primary-container":"#134e3f","on-primary":"#ffffff","surface-container-high":"#e1e8fd","on-primary-container":"#86beab","inverse-primary":"#99d2be","secondary-fixed":"#a3f69c","inverse-on-surface":"#edf0ff","secondary":"#1b6d24","on-tertiary-fixed":"#121f00","surface-container":"#e9edff","outline-variant":"#bfc9c3","on-secondary-container":"#217128","on-surface":"#141b2b","on-error-container":"#93000a","on-primary-fixed-variant":"#155041","primary-fixed":"#b5efda","tertiary":"#203500","primary":"#00362a","on-tertiary":"#ffffff","on-background":"#141b2b","surface-container-low":"#f1f3ff","on-secondary":"#ffffff","tertiary-fixed-dim":"#98da27","on-secondary-fixed":"#002204","surface-container-highest":"#dce2f7","secondary-fixed-dim":"#88d982","inverse-surface":"#293040","on-tertiary-container":"#85c505","on-secondary-fixed-variant":"#005312","surface":"#f9f9ff","primary-fixed-dim":"#99d2be","tertiary-fixed":"#b2f746","on-primary-fixed":"#002018","on-error":"#ffffff","error":"#ba1a1a","outline":"#707975","surface-variant":"#dce2f7","on-surface-variant":"#404945","tertiary-container":"#314d00"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"spacing-sm":"0.75rem","touch-target-min":"3rem","spacing-xs":"0.5rem","spacing-xl":"2rem","spacing-4xs":"0.125rem","spacing-2xs":"0.375rem","screen-padding-mobile":"1rem","spacing-3xs":"0.25rem","spacing-3xl":"3rem","spacing-lg":"1.5rem","spacing-2xl":"2.5rem","screen-padding-tablet":"1.5rem","spacing-md":"1rem","screen-padding-desktop":"2rem"},"fontFamily":{"title-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"display-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-md":["Inter"],"title-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Inter"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0.015em","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.005em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-screen-padding-mobile flex items-center justify-between gap-spacing-xs"><div class="flex items-center gap-spacing-xs"><img alt="KrishiSetu Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2KdJVj0-aOIWlQX4NYlqajXOrI2hloj73uVi0wkuiZk9pd1dnKF_cMm_bqRdshjNxU7eZZ8D8Ff0hN3XN85PS0GH-2fqJp7OVMh7V0hu7Ewdn0PwhJmDOzm_j-twqWJatLmJOWz6dD8nsAdDIZnPzckqyj9O8098zNCLYj8sHCLt6sOGMNBj9pYvKDCP4jEeVdZQf7f3l_EiSHjlVJGfSuX_ADdibkUtR5otx5U7QiqDDLH_BEKBS"/><div class="flex flex-col"><span class="font-title-md text-title-md tracking-tight text-primary leading-tight">KrishiSetu</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none hidden">Bookings</span></div></div><div class="flex items-center gap-spacing-2xs"><button aria-label="Voice Guidance Assistant" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="flex items-center bg-surface-container-high rounded-full p-spacing-4xs"><button class="px-spacing-xs py-spacing-3xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-[0_1px_3px_0px_rgba(19,78,63,0.08)]" type="button">EN</button><button class="px-spacing-xs py-spacing-3xs rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">हि</button><button class="px-spacing-xs py-spacing-3xs rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">म</button></div><div class="relative flex items-center justify-center w-11 h-11"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_0px_rgba(19,78,63,0.1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_0Elz_ILz_kj-7IMuycD95FI8WnT7nPSuxAzuL6cVenvU95rw2nDI0O_0X7MXbrlKjQS78tr12mKVGe7bleW5rCKAIEJFx6Yocqgar_G3wBO6-3baYwza7BaMiEoTVIw31YGjIaxT5u0tH3OUJy-ZfENoE5LREzjc-JtskUj9Vip_LelpP00p42HMQWEOd7Mtp7Y2o4ihysPu_xGMEZMszdM6H98PCM6fSKRAslsFCPkUYuKFgIqS"/><div class="absolute bottom-1 right-1 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface flex items-center justify-center"><span class="material-symbols-outlined text-[9px] text-on-secondary">check</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-8">
+<div class="px-screen-padding-mobile pt-3 flex flex-col gap-spacing-sm">
+<div class="flex flex-col gap-spacing-3xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Operational Yard Dispatch</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-semibold tracking-tight">
+        Procurement Bookings
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Manage active transit tokens, yard bays, and mandi arrivals.
+      </p>
+</div>
+<div class="flex items-center gap-spacing-xs mt-1">
+<div class="flex-1 flex items-center bg-surface-container-high rounded-xl px-spacing-sm py-2 shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search Lot ID, Mandi, or Crop..." type="text"/>
+</div>
+<button aria-label="Filter Bookings" class="h-12 w-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</button>
+</div>
+<button class="w-full h-[52px] bg-primary rounded-xl text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-spacing-xs shadow-md active:opacity-90 transition-opacity" onclick="document.getElementById('booking-stepper-widget').scrollIntoView({behavior: 'smooth'})" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Book New Intake Slot</span>
+</button>
+</div>
+<div class="px-screen-padding-mobile mt-spacing-md flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active Lot • In Transit</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-secondary-container/30 px-2 py-0.5 rounded-full">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span> Live Yard Telemetry
+      </span>
+</div>
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-md flex flex-col">
+<div class="h-28 w-full relative overflow-hidden bg-primary">
+<img class="w-full h-full object-cover opacity-60 mix-blend-overlay" data-alt="A modern agricultural transport truck loaded with golden grain sacks driving on a clear morning highway towards a large mechanized government procurement silo terminal under bright sunny skies, high resolution crisp logistical photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaURJcTknI1AeZHWw2_OecD8Mg9H5C24BYp0QZI1EaUE9xsbpcEKD5_Ntmm7bAn3hUShAKNWgHGjQ0P72XAhFBv-YOGyXHv95BSVZXtV0mmMuvM0NHJd9HVXJZmWjx5WG4evY40wGT-YKI30zsteyd_l3pYEIVuDHd_KzvwFDoaoCUJzgVJHbCyuCind9cYLxBAoJE9TtQ4cKHFJ9Yirv84QRW4N8vu_Eo9NHSC9PxyDDWLC0WPp8n"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Transit Manifest</span>
+<span class="font-title-lg text-title-lg text-on-primary font-semibold">Lot #KS-2024-8841</span>
+</div>
+<div class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>En Route</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-md flex flex-col gap-spacing-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sharbati Wheat</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Net Yield: <strong class="text-on-surface">85 Quintals</strong> • 3.2T Truck</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">Target Bay</span>
+<span class="font-title-md text-title-md text-primary font-bold bg-surface-container px-2.5 py-0.5 rounded-lg">Bay #04</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-spacing-sm flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Karnal APMC Hub #3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gate No. 2 Entry • Weighbridge B</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">ETA: 11:30 AM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">In ~38 mins</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full transition-all duration-1000" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between items-center -mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dispatched: Taraori</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">14 km remaining</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Karnal Silo</span>
+</div>
+<div class="flex items-center gap-spacing-xs pt-1">
+<button class="flex-1 h-12 rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" onclick="toggleTrackerModal(true)" type="button">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+<span>View Tracker</span>
+</button>
+<button class="flex-1 h-12 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.99] transition-transform" onclick="toggleQrModal(true)" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+<span>Gate Pass QR</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-screen-padding-mobile mt-spacing-lg flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Upcoming Reserved Slots</h2>
+<span class="font-label-md text-label-md text-primary font-medium">2 Active</span>
+</div>
+<div class="flex flex-col gap-spacing-sm">
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-start justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">grain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Mustard Seed</h3>
+<span class="font-label-sm text-label-sm text-outline">(Sarson)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42 Quintals • Tractor Trolley</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Token Confirmed</span>
+</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">store</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Nilokheri Sub-Yard</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Tomorrow, Oct 25 • 09:00 AM</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Token #NLK-0921-A</span>
+<div class="flex items-center gap-spacing-2xs">
+<button class="h-10 px-3 rounded-lg text-error font-label-md text-label-md hover:bg-error-container/20 transition-colors" type="button">
+              Cancel
+            </button>
+<button class="h-10 px-4 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+              Modify Slot
+            </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-start justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">grass</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Basmati Paddy 1121</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">120 Quintals • 2x Mini Truck</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[14px] text-tertiary">assignment_late</span>
+<span>Pre-Check Needed</span>
+</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">warehouse</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Gharaunda Mandi</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">event</span>
+<span>Mon, Oct 28 • 10:30 AM</span>
+</div>
+</div>
+<div class="bg-error-container/30 text-on-error-container p-2.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0">water_drop</span>
+<p class="font-body-sm text-body-sm">Government guidelines require moisture content &lt; 14% before entering weighbridge.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Token #GHD-4402-P</span>
+<button class="h-10 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 hover:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Upload Moisture Report</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-screen-padding-mobile mt-spacing-lg flex flex-col gap-spacing-xs" id="booking-stepper-widget">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">bolt</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Express Slot Reservation</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-secondary-container/30 px-2 py-0.5 rounded-md">Instant Token</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm flex flex-col gap-spacing-sm">
+<div class="flex items-center justify-between relative px-2">
+<div class="absolute left-6 right-6 top-4 h-0.5 bg-surface-container-highest -z-0"></div>
+<div class="absolute left-6 top-4 h-0.5 bg-primary w-1/4 -z-0"></div>
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Crop &amp; Qty</span>
+</div>
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-medium">2</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Centre &amp; Bay</span>
+</div>
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-medium">3</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vehicle</span>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-xs pt-2">
+<label class="font-label-md text-label-md text-on-surface font-medium">Select Commodity</label>
+<div class="grid grid-cols-4 gap-spacing-2xs">
+<button class="crop-pill active flex flex-col items-center justify-center py-2.5 rounded-xl bg-primary text-on-primary shadow-sm transition-all" onclick="selectCrop(this, 'Wheat')" type="button">
+<span class="material-symbols-outlined text-[20px]">grain</span>
+<span class="font-label-sm text-label-sm mt-1">Wheat</span>
+</button>
+<button class="crop-pill flex flex-col items-center justify-center py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="selectCrop(this, 'Mustard')" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_vintage</span>
+<span class="font-label-sm text-label-sm mt-1">Mustard</span>
+</button>
+<button class="crop-pill flex flex-col items-center justify-center py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="selectCrop(this, 'Paddy')" type="button">
+<span class="material-symbols-outlined text-[20px]">grass</span>
+<span class="font-label-sm text-label-sm mt-1">Paddy</span>
+</button>
+<button class="crop-pill flex flex-col items-center justify-center py-2.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="selectCrop(this, 'Gram')" type="button">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+<span class="font-label-sm text-label-sm mt-1">Gram</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-3xs">
+<label class="font-label-md text-label-md text-on-surface font-medium">Estimated Tonnage (Quintals)</label>
+<div class="h-14 bg-surface-container-low rounded-xl px-spacing-sm flex items-center justify-between">
+<input class="w-32 bg-transparent font-title-lg text-title-lg text-primary font-bold focus:outline-none" id="tonnage-input" type="number" value="65"/>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary active:scale-95 transition-transform" onclick="adjustTonnage(-5)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary active:scale-95 transition-transform" onclick="adjustTonnage(5)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-2xs pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Live Mandi Yard Congestion</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Synchronized
+          </span>
+</div>
+<div class="flex flex-col gap-spacing-3xs">
+<div class="p-spacing-sm rounded-xl bg-secondary-container/20 flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Karnal APMC Main Yard</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">~15 min average wait time • Recommended</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-2 py-0.5 rounded-full font-semibold">Optimal</span>
+</div>
+<div class="p-spacing-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">hourglass_top</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Nilokheri Sub-Yard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">~45 min average wait time • Moderate load</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-high px-2 py-0.5 rounded-full">Busy</span>
+</div>
+</div>
+</div>
+<button class="w-full h-12 bg-primary rounded-xl text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 mt-1 shadow-sm active:opacity-95" type="button">
+<span>Proceed to Depot &amp; Bay Selection</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="px-screen-padding-mobile mt-spacing-lg mb-4">
+<div class="bg-surface-container-low rounded-2xl p-spacing-md flex items-center gap-spacing-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Need Yard Logistics Help?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contact APMC Karnal Weighbridge Desk: 1800-180-1551</span>
+</div>
+<button aria-label="Call Support" class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm active:scale-95 ml-auto flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-end justify-center p-0 transition-opacity" id="tracker-modal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-3xl p-spacing-md shadow-2xl flex flex-col gap-spacing-sm max-h-[85vh] overflow-y-auto">
+<div class="w-12 h-1.5 rounded-full bg-surface-container-highest mx-auto"></div>
+<div class="flex items-center justify-between pb-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">GPS Telemetry Stream</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Transit Timeline: #KS-2024-8841</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="toggleTrackerModal(false)" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="w-full h-44 bg-surface-container-high rounded-xl relative overflow-hidden flex items-center justify-center" data-location="Karnal APMC Grain Market, Haryana" style="">
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<div class="bg-surface-container-lowest/90 px-3 py-1.5 rounded-lg shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">navigation</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Vehicle moving at 42 km/h</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-xs py-2">
+<div class="flex items-start gap-3 relative">
+<div class="w-6 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<div class="w-0.5 h-10 bg-secondary"></div>
+</div>
+<div class="flex flex-col -mt-0.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Loaded &amp; Weight Pre-Calibrated</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Taraori Collection Center • 10:15 AM</span>
+</div>
+</div>
+<div class="flex items-start gap-3 relative">
+<div class="w-6 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<div class="w-0.5 h-10 bg-secondary"></div>
+</div>
+<div class="flex flex-col -mt-0.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">En Route Via NH-44 Expressway</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Passing Nilokheri Toll Plaza • 10:52 AM</span>
+</div>
+</div>
+<div class="flex items-start gap-3 relative">
+<div class="w-6 flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[20px] animate-pulse">radio_button_checked</span>
+<div class="w-0.5 h-10 bg-surface-container-highest"></div>
+</div>
+<div class="flex flex-col -mt-0.5">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Approaching Karnal Mandi Gate #2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estimated arrival in 38 mins (11:30 AM)</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 flex flex-col items-center">
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<div class="flex flex-col -mt-0.5">
+<span class="font-title-sm text-title-sm text-outline">Gross Weighbridge &amp; Bay #04 Intake</span>
+<span class="font-body-sm text-body-sm text-outline">Scheduled for 11:45 AM</span>
+</div>
+</div>
+</div>
+<button class="w-full h-12 bg-primary rounded-xl text-on-primary font-label-lg text-label-lg" onclick="toggleTrackerModal(false)" type="button">
+        Dismiss Tracking View
+      </button>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity" id="qr-modal">
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-2xl p-spacing-md shadow-2xl flex flex-col items-center text-center gap-spacing-sm">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">APMC FastTrack Intake Pass</span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="toggleQrModal(false)" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl shadow-inner flex flex-col items-center">
+<div class="w-48 h-48 bg-white p-3 rounded-xl shadow-sm flex items-center justify-center">
+<svg class="w-full h-full" fill="currentColor" viewbox="0 0 100 100">
+<path d="M10 10h30v30H10V10zm5 5h20v20H15V15zm5 5h10v10H20V20zm40-10h30v30H60V10zm5 5h20v20H65V15zm5 5h10v10H70V20zM10 60h30v30H10V60zm5 5h20v20H15V65zm5 5h10v10H20V70zm45-10h10v10H65V60zm15 0h10v10H80V60zm-15 15h10v15H65V75zm15 5h10v10H80V80zm-30-20h10v10H50V60zm0 15h10v15H50V75zm-5-30h10v10H45V45zm10 0h10v10H55V45z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="font-label-md text-label-md font-mono text-primary font-bold mt-2">LOT-KS-8841-B04</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Sharbati Wheat • Bay #04</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scan at Karnal Gate #2 RFID Reader for direct ingress</span>
+</div>
+<div class="flex items-center gap-2 w-full pt-1">
+<button class="flex-1 h-11 rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span> Share
+        </button>
+<button class="flex-1 h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span> Save Pass
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const bookingsNav = document.querySelector('nav a[data-path="bookings"]');
+    if (bookingsNav) {
+      const activeClasses = (bookingsNav.closest('nav')?.dataset?.activeClasses || '')
+        .split(' ')
+        .filter(Boolean);
+      
+      document.querySelectorAll('nav a').forEach(a => {
+        activeClasses.forEach(cls => a.classList.remove(cls));
+      });
+      
+      activeClasses.forEach(cls => bookingsNav.classList.add(cls));
+
+      const pill = bookingsNav.querySelector('.nav-pill');
+      if (pill) {
+        pill.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        if (!pill.querySelector('.notification-badge')) {
+          const badge = document.createElement('span');
+          badge.className = 'notification-badge absolute top-1 right-3 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface';
+          pill.style.position = 'relative';
+          pill.appendChild(badge);
+        }
+      }
+      const label = bookingsNav.querySelector('.nav-label');
+      if (label) {
+        label.classList.add('font-label-md', 'text-primary', 'font-semibold');
+      }
+    }
+  })();
+
+  function toggleTrackerModal(show) {
+    const modal = document.getElementById('tracker-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function toggleQrModal(show) {
+    const modal = document.getElementById('qr-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function selectCrop(btn, cropName) {
+    document.querySelectorAll('.crop-pill').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      b.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+  }
+
+  function adjustTonnage(delta) {
+    const input = document.getElementById('tonnage-input');
+    let val = parseInt(input.value || '0', 10);
+    val = Math.max(5, val + delta);
+    input.value = val;
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.04)]" data-active-classes="[&amp;_.nav-pill]:bg-secondary-container [&amp;_.nav-pill]:text-on-secondary-container [&amp;_.nav-label]:font-label-md [&amp;_.nav-label]:text-primary"><div class="flex justify-around items-center h-20 px-spacing-2xs"><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">dashboard</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Home</span></a><a aria-current="page" class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all [&amp;_.nav-pill]:bg-secondary-container [&amp;_.nav-pill]:text-on-secondary-container [&amp;_.nav-label]:font-label-md [&amp;_.nav-label]:text-primary" data-path="bookings" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">confirmation_number</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Bookings</span></a><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="find-centre" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">location_on</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Find Centre</span></a><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="history" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">receipt_long</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">History</span></a><a class="group flex flex-col items-center justify-center w-full min-h-[48px] py-spacing-3xs text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">badge</span></div><span class="nav-label font-label-sm text-label-sm mt-spacing-4xs tracking-tight">Profile</span></a></div></nav></body></html>
