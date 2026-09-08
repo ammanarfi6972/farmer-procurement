@@ -2,13 +2,13 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "KisanMitra - Farmer Procurement System",
+  title: "FasalTrack - Farmer Procurement System",
   description: "An intelligent queue management and procurement system for farmers.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "KisanMitra",
+    title: "FasalTrack",
   },
 };
 

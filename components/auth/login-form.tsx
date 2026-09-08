@@ -144,7 +144,7 @@ export function LoginForm() {
                 id="email" 
                 name="email" 
                 type="email" 
-                placeholder="staff@kisanmitra.in" 
+                placeholder="staff@FasalTrack.in" 
                 className="h-11"
                 required 
               />

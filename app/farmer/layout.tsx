@@ -11,7 +11,7 @@ import { getAdminClient } from "@/lib/supabase/server";
 
 
 export const metadata = {
-  title: "Farmer Portal | KisanMitra",
+  title: "Farmer Portal | FasalTrack",
   description: "Manage your agricultural produce procurement.",
 };
 
@@ -49,7 +49,7 @@ export default async function FarmerLayout({
                 <Sprout className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div className="hidden sm:block">
-                <h1 className="font-extrabold text-slate-800 text-lg md:text-xl leading-tight tracking-tight">KisanMitra</h1>
+                <h1 className="font-extrabold text-slate-800 text-lg md:text-xl leading-tight tracking-tight">FasalTrack</h1>
                 <p className="text-[10px] md:text-xs font-semibold text-emerald-600 uppercase tracking-widest mt-0.5">Portal</p>
               </div>
             </div>

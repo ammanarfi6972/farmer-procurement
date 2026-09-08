@@ -11,7 +11,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Leaf className="w-6 h-6 text-primary" />
           <span className="text-xl font-bold tracking-tight text-primary">
-            KisanMitra
+            FasalTrack
           </span>
         </div>
         <div className="flex items-center gap-4">

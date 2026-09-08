@@ -6,7 +6,7 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 // For demo purposes, we map mobile numbers to a dummy email to use Supabase password auth
-const MOCK_DOMAIN = "@mock.kisanmitra.in";
+const MOCK_DOMAIN = "@mock.FasalTrack.in";
 const DEMO_PASSWORD = "DemoPassword123!";
 
 function getAdminClient() {
@@ -97,7 +97,7 @@ export async function loginOfficial(formData: FormData) {
   const password = formData.get("password") as string;
 
   // DEMO MOCK PROVISIONING FOR STAFF
-  const isDemoEmail = email.includes("@kisanmitra") || email.includes("@test.com");
+  const isDemoEmail = email.includes("@FasalTrack") || email.includes("@test.com");
   if (process.env.NEXT_PUBLIC_IS_DEMO_ENVIRONMENT === "true" && isDemoEmail) {
     const supabaseAdmin = getAdminClient();
     if (supabaseAdmin) {
@@ -123,7 +123,7 @@ export async function loginOfficial(formData: FormData) {
   console.log("signInWithPassword succeeded:", data?.user?.id);
 
   // Ensure profile has correct role
-  const isDemoEmailPostLogin = email.includes("@kisanmitra") || email.includes("@test.com");
+  const isDemoEmailPostLogin = email.includes("@FasalTrack") || email.includes("@test.com");
   if (process.env.NEXT_PUBLIC_IS_DEMO_ENVIRONMENT === "true" && isDemoEmailPostLogin && data?.user) {
     const supabaseAdmin = getAdminClient();
     console.log("Demo environment detected. Updating profile for:", email);

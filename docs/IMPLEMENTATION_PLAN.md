@@ -1,7 +1,7 @@
 # Implementation Plan
 
 ## Overview
-This document outlines the step-by-step technical implementation of the KisanMitra (Farmer Procurement & Queue Management Platform) for SIH 2026. The architecture follows a modular monolith approach using Next.js, Supabase (PostgreSQL, Auth, Realtime), and Tailwind CSS.
+This document outlines the step-by-step technical implementation of the FasalTrack (Farmer Procurement & Queue Management Platform) for SIH 2026. The architecture follows a modular monolith approach using Next.js, Supabase (PostgreSQL, Auth, Realtime), and Tailwind CSS.
 
 ## 1. Repository Structure & Technology Setup
 - **Structure**: Initialize the Next.js App Router project in the root directory.

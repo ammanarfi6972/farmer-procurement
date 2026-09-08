@@ -37,7 +37,7 @@ export default function OfflineFallback() {
 
       <div className="mt-8 flex items-center gap-2 text-slate-400 relative z-10">
         <Tractor className="w-5 h-5" />
-        <span className="font-semibold tracking-tight">KisanMitra</span>
+        <span className="font-semibold tracking-tight">FasalTrack</span>
       </div>
     </div>
   );

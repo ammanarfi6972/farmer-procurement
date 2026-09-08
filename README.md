@@ -1,8 +1,8 @@
-# KisanMitra — Farmer Procurement & Queue Management Platform
+# FasalTrack — Farmer Procurement & Queue Management Platform
 
 ## SIH 2026 Project (SIH26032)
 
-KisanMitra is a real-time procurement coordination and centre-operations platform designed to reduce uncertainty, distribute arrivals intelligently, digitize physical queues, and make procurement status visible to farmers and officials.
+FasalTrack is a real-time procurement coordination and centre-operations platform designed to reduce uncertainty, distribute arrivals intelligently, digitize physical queues, and make procurement status visible to farmers and officials.
 
 ## Tech Stack
 - Next.js (App Router)

@@ -11,7 +11,7 @@ import { DataControls } from "./data-controls";
 
 
 export const metadata = {
-  title: "District Admin | KisanMitra",
+  title: "District Admin | FasalTrack",
   description: "High-level overview of district procurement operations.",
 };
 

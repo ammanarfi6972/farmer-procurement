@@ -1,6 +1,6 @@
 {
-  "name": "KisanMitra - Farmer Procurement Platform",
-  "short_name": "KisanMitra",
+  "name": "FasalTrack - Farmer Procurement Platform",
+  "short_name": "FasalTrack",
   "description": "Intelligent queue management and procurement system for farmers and government officials.",
   "start_url": "/",
   "display": "standalone",

@@ -7,7 +7,7 @@ import { Building2, LogOut } from "lucide-react";
 import { ManagerNav } from "./manager-nav";
 
 export const metadata = {
-  title: "Manager Console | KisanMitra",
+  title: "Manager Console | FasalTrack",
   description: "Manage procurement queues and operations.",
 };
 
@@ -41,7 +41,7 @@ export default async function ManagerLayout({
             <Building2 className="w-6 h-6 text-indigo-400" />
           </div>
           <div>
-            <h1 className="font-bold text-lg leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500">KisanMitra Manager Console</h1>
+            <h1 className="font-bold text-lg leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500">FasalTrack Manager Console</h1>
             <p className="text-xs font-medium text-slate-400">Procurement & Queue Management</p>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { logout } from "@/lib/auth/actions";
 import { Settings, LogOut, ShieldAlert } from "lucide-react";
 
 export const metadata = {
-  title: "Demo Control | KisanMitra",
+  title: "Demo Control | FasalTrack",
 };
 
 export default async function DemoLayout({

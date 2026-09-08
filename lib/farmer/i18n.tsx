@@ -12,7 +12,7 @@ interface I18nContextType {
 
 const translations: Record<Language, Record<string, string>> = {
   en: {
-    "app.title": "KisanMitra",
+    "app.title": "FasalTrack",
     "nav.signout": "Sign Out",
     "nav.languageToggle": "हिंदी",
     "dashboard.welcome": "Welcome back",
