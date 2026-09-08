@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { loginOfficial, requestFarmerOTP, verifyFarmerOTP } from "@/lib/auth/actions";
 import { Loader2, ShieldCheck, Tractor } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export function LoginForm() {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<"farmer" | "official">("farmer");
   
   // Official State
@@ -31,6 +33,8 @@ export function LoginForm() {
       const res = await loginOfficial(formData);
       if (res?.error) {
         setOfficialError(res.error);
+      } else if (res?.success) {
+        router.push(res.redirectTo || "/manager");
       }
     });
   }
@@ -52,6 +56,8 @@ export function LoginForm() {
         const res = await verifyFarmerOTP(formData);
         if (res?.error) {
           setFarmerError(res.error);
+        } else if (res?.success) {
+          router.push("/farmer");
         }
       }
     });

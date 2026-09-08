@@ -86,10 +86,11 @@ export async function verifyFarmerOTP(formData: FormData) {
   });
 
   if (error) {
-    return { error: "Authentication failed." };
+    console.error("signIn error:", error);
+    return { error: "Authentication failed: " + error.message };
   }
 
-  redirect("/farmer");
+  return { success: true };
 }
 
 export async function loginOfficial(formData: FormData) {
@@ -153,13 +154,14 @@ export async function loginOfficial(formData: FormData) {
     console.log("Skipping profile upsert. Env:", process.env.NEXT_PUBLIC_IS_DEMO_ENVIRONMENT, "Email:", email, "User:", !!data?.user);
   }
 
+  let redirectTo = "/manager";
   if (email.startsWith("demo")) {
-    redirect("/demo");
+    redirectTo = "/demo";
   } else if (email.startsWith("admin")) {
-    redirect("/admin");
-  } else {
-    redirect("/manager");
+    redirectTo = "/admin";
   }
+  
+  return { success: true, redirectTo };
 }
 
 export async function logout() {
